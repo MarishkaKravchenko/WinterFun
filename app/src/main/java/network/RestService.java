@@ -3,14 +3,15 @@ package network;
 
 import network.responseModels.House;
 
-import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
+import rx.Observable;
 
 public interface RestService {
 
 /*    @Headers({
             "Custom-Header : me header Value"
     })*/
-    @GET("houses/362")
-    Call<House> getHouses();
+    @GET("{number}")
+    Observable<House> getHouses(@Path("number") String number);
 }

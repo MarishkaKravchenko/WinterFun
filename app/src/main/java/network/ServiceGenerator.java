@@ -19,8 +19,8 @@ public class ServiceGenerator {
 
     public static <S> S createService(Class<S> serviceClass) {
 
-        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
-        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+//        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+//        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
 
 //        httpClient.addInterceptor(new HeaderInterceptor());
 //        httpClient.addInterceptor(logging);
