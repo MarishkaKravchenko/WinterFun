@@ -55,4 +55,8 @@ public class House {
     public String getName() {
         return name;
     }
+
+    public String getUrl() {
+        return url;
+    }
 }
